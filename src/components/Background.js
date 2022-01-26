@@ -1,14 +1,10 @@
 import { Image } from "@chakra-ui/react";
+import source from "../assets/Background.jpg";
 
 function background() {
   return (
     <div>
-      <Image
-        src="src\assets\Background.jpg"
-        alt="bg"
-        display={"flex"}
-        align={"center"}
-      />
+      <Image src={source} alt="bg" display={"flex"} align={"center"} />
     </div>
   );
 }

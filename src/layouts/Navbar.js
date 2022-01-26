@@ -16,6 +16,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import { Image } from "@chakra-ui/react";
+import source from "../assets/Logo.png";
 import {
   HamburgerIcon,
   CloseIcon,
@@ -50,7 +51,7 @@ export default function WithSubnavigation() {
         </Flex>
 
         <Box>
-          <Image src="src\assets\Logo.png" alt="logo" />
+          <Image src={source} alt="logo" />
         </Box>
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "center" }}>
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
