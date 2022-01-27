@@ -8,6 +8,7 @@ import {
   Link,
   Box,
   Stack,
+  HStack,
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
@@ -20,11 +21,11 @@ export default function Samplecard() {
   return (
     <Center py={6}>
       <Stack
+        borderColor="black"
         borderWidth="1px"
         borderRadius="50px"
-        // mt="-150px"
         mx={{ base: "70px", lg: "70px" }}
-        w={{ sm: "100%", md: "70%" }}
+        w={{ sm: "100%", md: "83%" }}
         direction={{ base: "column", md: "row" }}
         bg={useColorModeValue("white", "gray.900")}
         boxShadow={"2lg"}
@@ -45,47 +46,31 @@ export default function Samplecard() {
           p={1}
           pt={2}>
           <Heading fontSize={"2xl"} fontFamily={"body"}>
-            Lindsey James
+            Card Details
           </Heading>
-          <Text fontWeight={600} color={"gray.500"} size="sm" mb={4}>
-            @lindsey_jam3s
-          </Text>
+          <HStack width="50%" display="flex" justifyContent="space-around">
+            <HStack>
+              <Text fontWeight={600} color={"gray.500"} size="sm">
+                $499
+              </Text>
+              <Text as="s">$2000</Text>
+            </HStack>
+            <Text fontWeight={600} color={"green"} size="sm">
+              75% Off
+            </Text>
+          </HStack>
           <Text
             textAlign={"center"}
             color={useColorModeValue("gray.700", "gray.400")}
             px={3}>
-            Actress, musician, songwriter and artist. PM for work inquires or
-            <Link href={"#"} color={"blue.400"}>
-              #tag
-            </Link>
-            me in your posts
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+            perspiciatis cumque eum. Soluta cupiditate dolorum ab deleniti
+            officiis delectus minima, laborum repellat adipisci veniam placeat
+            nisi obcaecati mollitia aliquid. Soluta.
           </Text>
-          <Stack align={"center"} justify={"center"} direction={"row"} mt={6}>
-            <Badge
-              px={2}
-              py={1}
-              bg={useColorModeValue("gray.50", "gray.800")}
-              fontWeight={"400"}>
-              #art
-            </Badge>
-            <Badge
-              px={2}
-              py={1}
-              bg={useColorModeValue("gray.50", "gray.800")}
-              fontWeight={"400"}>
-              #photography
-            </Badge>
-            <Badge
-              px={2}
-              py={1}
-              bg={useColorModeValue("gray.50", "gray.800")}
-              fontWeight={"400"}>
-              #music
-            </Badge>
-          </Stack>
 
           <Stack
-            width={"100%"}
+            w={"50%"}
             mt={"2rem"}
             direction={"row"}
             padding={2}
@@ -93,29 +78,18 @@ export default function Samplecard() {
             alignItems={"center"}>
             <Button
               flex={1}
-              fontSize={"sm"}
-              rounded={"full"}
-              _focus={{
-                bg: "gray.200",
-              }}>
-              Message
-            </Button>
-            <Button
-              flex={1}
-              fontSize={"sm"}
-              rounded={"full"}
-              bg={"blue.400"}
+              height={"70px"}
+              fontSize={"lg"}
+              rounded={{ sm: "full", md: "lg" }}
+              bg={"black"}
               color={"white"}
-              boxShadow={
-                "0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)"
-              }
               _hover={{
-                bg: "blue.500",
+                bg: "blue.300",
               }}
               _focus={{
-                bg: "blue.500",
+                bg: "blue.300",
               }}>
-              Follow
+              Try this Card
             </Button>
           </Stack>
         </Stack>

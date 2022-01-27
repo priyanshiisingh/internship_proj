@@ -49,7 +49,6 @@ export default function WithSubnavigation() {
             aria-label={"Toggle Navigation"}
           />
         </Flex>
-
         <Box>
           <Image src={source} alt="logo" />
         </Box>

@@ -12,110 +12,85 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 
-import source1 from "../assets/Page1.jpg";
-import source2 from "../assets/Page2.jpg";
-import source3 from "../assets/Page3.jpg";
+import { Icon } from "@chakra-ui/react";
+import { MdSettings } from "react-icons/md";
 
 export default function Samplecard() {
   return (
     <Center py={6}>
       <Stack
+        display="flex"
+        borderColor="black"
+        alignItems="center"
+        justifyContent="space-around"
         borderWidth="1px"
         borderRadius="50px"
         mx={{ base: "70px", lg: "70px" }}
-        w={{ sm: "100%", md: "540px" }}
+        w={{ sm: "100%", md: "83%" }}
         direction={{ base: "column", md: "row" }}
         bg={useColorModeValue("white", "gray.900")}
         boxShadow={"2lg"}
         padding={4}>
-        <Box
-          maxH="full"
-          borderWidth="1px"
-          borderRadius="50px"
-          overflow="hidden"
-          alignItems="center">
-          <Image objectFit="cover" boxSize="100%" src={source1} />
-        </Box>
         <Stack
-          flex={1}
-          flexDirection="column"
-          justifyContent="center"
-          alignItems="center"
-          p={1}
-          pt={2}>
-          <Heading fontSize={"2xl"} fontFamily={"body"}>
-            Lindsey James
-          </Heading>
-          <Text fontWeight={600} color={"gray.500"} size="sm" mb={4}>
-            @lindsey_jam3s
-          </Text>
-          <Text
-            textAlign={"center"}
-            color={useColorModeValue("gray.700", "gray.400")}
-            px={3}>
-            Actress, musician, songwriter and artist. PM for work inquires or
-            <Link href={"#"} color={"blue.400"}>
-              #tag
-            </Link>
-            me in your posts
-          </Text>
-          <Stack align={"center"} justify={"center"} direction={"row"} mt={6}>
-            <Badge
-              px={2}
-              py={1}
-              bg={useColorModeValue("gray.50", "gray.800")}
-              fontWeight={"400"}>
-              #art
-            </Badge>
-            <Badge
-              px={2}
-              py={1}
-              bg={useColorModeValue("gray.50", "gray.800")}
-              fontWeight={"400"}>
-              #photography
-            </Badge>
-            <Badge
-              px={2}
-              py={1}
-              bg={useColorModeValue("gray.50", "gray.800")}
-              fontWeight={"400"}>
-              #music
-            </Badge>
-          </Stack>
-
+          width={{ sm: "50%" }}
+          direction={{ base: "row", md: "column" }}
+          justifyContent={{ base: "center" }}
+          alignItems="center">
+          <Icon as={MdSettings} boxSize="4em" />
           <Stack
-            width={"100%"}
-            mt={"2rem"}
-            direction={"row"}
-            padding={2}
-            justifyContent={"space-between"}
-            alignItems={"center"}>
-            <Button
-              flex={1}
-              fontSize={"sm"}
-              rounded={"full"}
-              _focus={{
-                bg: "gray.200",
-              }}>
-              Message
-            </Button>
-            <Button
-              flex={1}
-              fontSize={"sm"}
-              rounded={"full"}
-              bg={"blue.400"}
-              color={"white"}
-              boxShadow={
-                "0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)"
-              }
-              _hover={{
-                bg: "blue.500",
-              }}
-              _focus={{
-                bg: "blue.500",
-              }}>
-              Follow
-            </Button>
+            flex={1}
+            justifyContent="center"
+            alignItems="center"
+            p={1}
+            pt={2}>
+            <Text
+              textAlign={"center"}
+              color={useColorModeValue("gray.700", "gray.400")}
+              px={3}>
+              Create your card in 5 minutes
+            </Text>
+          </Stack>
+        </Stack>
+
+        <Stack
+          width={{ sm: "50%" }}
+          direction={{ base: "row", md: "column" }}
+          justifyContent={{ base: "center" }}
+          alignItems="center">
+          <Icon as={MdSettings} boxSize="4em" />
+          <Stack
+            flex={1}
+            justifyContent="center"
+            alignItems="center"
+            p={1}
+            pt={2}>
+            <Text
+              textAlign={"center"}
+              color={useColorModeValue("gray.700", "gray.400")}
+              px={3}>
+              Create your card in 5 minutes
+            </Text>
+          </Stack>
+        </Stack>
+
+        <Stack
+          width={{ sm: "50%" }}
+          direction={{ base: "row", md: "column" }}
+          justifyContent={{ base: "center" }}
+          alignItems="center">
+          <Icon as={MdSettings} boxSize="4em" />
+          <Stack
+            flex={1}
+            justifyContent="center"
+            alignItems="center"
+            p={1}
+            pt={2}>
+            <Text
+              textAlign={"center"}
+              color={useColorModeValue("gray.700", "gray.400")}
+              px={3}>
+              Create your card in 5 minutes
+            </Text>
           </Stack>
         </Stack>
       </Stack>
