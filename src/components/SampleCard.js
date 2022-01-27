@@ -71,7 +71,7 @@ export default function Samplecard() {
           </Text>
 
           <Stack
-            w={"50%"}
+            w={{ base: "80%", sm: "60%", md: "50%" }}
             mt={"2rem"}
             direction={"row"}
             padding={2}

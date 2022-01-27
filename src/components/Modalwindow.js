@@ -22,7 +22,7 @@ export default function Modalwindow() {
 
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
-        <ModalContent minWidth={{ md: "75%" }} minH={{ md: "80%" }}>
+        <ModalContent minWidth={{ md: "75%" }}>
           <ModalCloseButton />
           <ModalBody>
             <ModalBod

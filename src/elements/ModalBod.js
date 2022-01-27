@@ -18,15 +18,14 @@ export default function ModalBod() {
   return (
     <Center py={6}>
       <Stack
-        mt={"35px"}
         display={{ md: "flex" }}
         alignItems="center"
-        w={{ sm: "100%", md: "100%" }}
+        w="100%"
         direction={{ base: "column", md: "row" }}
         padding={4}>
         <Box
           maxH={{ sm: "full" }}
-          width={{ sm: "100%", md: "50%" }}
+          width={{ base: "100%", sm: "80%", md: "70%", lg: "50%" }}
           overflow="hidden"
           alignItems="center">
           <Carousel />
@@ -61,7 +60,7 @@ export default function ModalBod() {
           </Text>
 
           <Stack
-            w={"50%"}
+            w={{ base: "80%", sm: "60%", md: "50%" }}
             mt={"2rem"}
             direction={"row"}
             padding={2}
@@ -71,7 +70,7 @@ export default function ModalBod() {
               flex={1}
               height={"70px"}
               fontSize={"lg"}
-              rounded={{ sm: "full", md: "lg" }}
+              rounded={{ base: "full", sm: "full", md: "lg" }}
               bg={"red"}
               color={"white"}
               _hover={{
