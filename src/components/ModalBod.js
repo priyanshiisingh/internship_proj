@@ -13,6 +13,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import Carousel from "../components/Carouselslides.js";
+// import source from "../assets/images.jpg";
 
 export default function ModalBod() {
   return (
@@ -23,6 +24,7 @@ export default function ModalBod() {
         w="100%"
         direction={{ base: "column", md: "row" }}
         padding={4}>
+        {/* <Image src={source} alt="design" height="150px" /> */}
         <Box
           maxH={{ sm: "full" }}
           width={{ base: "100%", sm: "100%", md: "70%", lg: "50%" }}
