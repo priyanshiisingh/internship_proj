@@ -27,7 +27,6 @@ export default function Samplecard() {
         borderColor="#b7b7a4"
         borderWidth="1px"
         borderRadius="50px"
-        mx={{ base: "70px", lg: "70px" }}
         w={{ sm: "80%", md: "85%" }}
         direction={{ base: "column", md: "row" }}
         bg={useColorModeValue("white", "gray.900")}

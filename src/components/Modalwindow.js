@@ -22,17 +22,14 @@ export default function Modalwindow() {
 
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
-        <ModalContent>
+        <ModalContent minWidth={{ md: "75%" }} minH={{ md: "80%" }}>
           <ModalCloseButton />
           <ModalBody>
-            <ModalBod />
+            <ModalBod
+              display={{ md: "flex" }}
+              justifyContent={{ md: "space-evenly" }}
+            />
           </ModalBody>
-
-          <ModalFooter>
-            <Button colorScheme="blue" mr={3} onClick={onClose}>
-              Close
-            </Button>
-          </ModalFooter>
         </ModalContent>
       </Modal>
     </>
