@@ -6,6 +6,7 @@ import {
   Heading,
   Image,
   Link,
+  Box,
   Stack,
   Text,
   useColorModeValue,
@@ -21,16 +22,21 @@ export default function Samplecard() {
       <Stack
         borderWidth="1px"
         borderRadius="50px"
+        mt="-150px"
         mx={{ base: "70px", lg: "70px" }}
-        w={{ sm: "100%", md: "540px" }}
-        height={{ sm: "476px", md: "20rem" }}
+        w={{ sm: "100%", md: "70%" }}
         direction={{ base: "column", md: "row" }}
         bg={useColorModeValue("white", "gray.900")}
         boxShadow={"2lg"}
         padding={4}>
-        <Flex flex={1} bg="blue.200">
+        <Box
+          maxH="full"
+          borderWidth="1px"
+          borderRadius="50px"
+          overflow="hidden"
+          alignItems="center">
           <Image objectFit="cover" boxSize="100%" src={source1} />
-        </Flex>
+        </Box>
         <Stack
           flex={1}
           flexDirection="column"
