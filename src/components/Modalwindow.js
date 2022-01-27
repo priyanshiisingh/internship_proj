@@ -10,13 +10,13 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { useDisclosure } from "@chakra-ui/react";
-import ModalBod from "../elements/ModalBod.js";
+import ModalBod from "../components/ModalBod.js";
 
 export default function Modalwindow() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
-      <Button onClick={onOpen} bg="white" fontSize="4xl">
+      <Button onClick={onOpen} bg="white" fontSize="4xl" borderWidth="1px">
         Card Title
       </Button>
 
