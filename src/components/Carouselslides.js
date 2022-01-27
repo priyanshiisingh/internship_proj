@@ -41,8 +41,8 @@ export default function Carousel() {
             <Image
               src={card.imageSrc}
               alt={card.title}
-              width={{ sm: "200", md: "300", lg: "350" }}
-              height={{ sm: "200", md: "300", lg: "350" }}
+              width={{ base: "200", sm: "250", md: "300", lg: "350" }}
+              height={{ base: "200", sm: "250", md: "300", lg: "350" }}
             />
           </div>
         ))}

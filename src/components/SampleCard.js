@@ -27,13 +27,13 @@ export default function Samplecard() {
         borderColor="#b7b7a4"
         borderWidth="1px"
         borderRadius="50px"
-        w={{ sm: "80%", md: "85%" }}
+        w={{ base: "75%", sm: "80%", md: "85%" }}
         direction={{ base: "column", md: "row" }}
         bg={useColorModeValue("white", "gray.900")}
         boxShadow={"2xl"}
         padding={4}>
         <Box
-          width={{ sm: "75%", md: "40%" }}
+          width={{ base: "90%", sm: "60%", md: "50%", lg: "40%" }}
           maxH="full"
           overflow="hidden"
           alignItems="center"
@@ -81,7 +81,7 @@ export default function Samplecard() {
               flex={1}
               height={"70px"}
               fontSize={"lg"}
-              rounded={{ sm: "full", md: "lg" }}
+              rounded={{ base: "full", sm: "full", md: "lg" }}
               bg={"black"}
               color={"white"}
               _hover={{
