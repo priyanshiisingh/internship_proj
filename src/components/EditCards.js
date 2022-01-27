@@ -20,7 +20,7 @@ export default function Samplecard() {
     <Center py={6}>
       <Stack
         display="flex"
-        borderColor="black"
+        borderColor="#b7b7a4"
         alignItems="center"
         justifyContent="space-around"
         borderWidth="1px"

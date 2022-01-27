@@ -16,19 +16,20 @@ import {
 import source1 from "../assets/Page1.jpg";
 import source2 from "../assets/Page2.jpg";
 import source3 from "../assets/Page3.jpg";
+import Modalwindow from "../components/Modalwindow.js";
 
 export default function Samplecard() {
   return (
     <Center py={6}>
       <Stack
-        borderColor="black"
+        borderColor="#b7b7a4"
         borderWidth="1px"
         borderRadius="50px"
         mx={{ base: "70px", lg: "70px" }}
         w={{ sm: "100%", md: "83%" }}
         direction={{ base: "column", md: "row" }}
         bg={useColorModeValue("white", "gray.900")}
-        boxShadow={"2lg"}
+        boxShadow={"2xl"}
         padding={4}>
         <Box
           maxH="full"
