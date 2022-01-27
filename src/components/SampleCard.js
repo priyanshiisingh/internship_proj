@@ -17,27 +17,29 @@ import source1 from "../assets/Page1.jpg";
 import source2 from "../assets/Page2.jpg";
 import source3 from "../assets/Page3.jpg";
 import Modalwindow from "../components/Modalwindow.js";
+import Carousel from "../components/Carouselslides.js";
 
 export default function Samplecard() {
   return (
     <Center py={6}>
       <Stack
+        alignItems="center"
         borderColor="#b7b7a4"
         borderWidth="1px"
         borderRadius="50px"
         mx={{ base: "70px", lg: "70px" }}
-        w={{ sm: "100%", md: "83%" }}
+        w={{ sm: "80%", md: "85%" }}
         direction={{ base: "column", md: "row" }}
         bg={useColorModeValue("white", "gray.900")}
         boxShadow={"2xl"}
         padding={4}>
         <Box
+          width={{ sm: "75%", md: "40%" }}
           maxH="full"
-          borderWidth="1px"
-          borderRadius="50px"
           overflow="hidden"
-          alignItems="center">
-          <Image objectFit="cover" boxSize="100%" src={source1} />
+          alignItems="center"
+          pb={5}>
+          <Carousel />
         </Box>
         <Stack
           flex={1}
@@ -46,9 +48,8 @@ export default function Samplecard() {
           alignItems="center"
           p={1}
           pt={2}>
-          <Heading fontSize={"2xl"} fontFamily={"body"}>
-            Card Details
-          </Heading>
+          <Modalwindow />
+
           <HStack width="50%" display="flex" justifyContent="space-around">
             <HStack>
               <Text fontWeight={600} color={"gray.500"} size="sm">
