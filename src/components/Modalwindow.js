@@ -17,7 +17,7 @@ export default function Modalwindow() {
   return (
     <>
       <Button onClick={onOpen} bg="white" fontSize="4xl">
-        Card Details
+        Card Title
       </Button>
 
       <Modal isOpen={isOpen} onClose={onClose}>
