@@ -51,12 +51,14 @@ export default function Samplecard() {
 
           <HStack width="50%" display="flex" justifyContent="space-around">
             <HStack>
-              <Text fontWeight={600} color={"gray.500"} size="sm">
+              <Text fontWeight={600} fontSize="1.5em">
                 $499
               </Text>
-              <Text as="s">$2000</Text>
+              <Text as="s" color={"gray.500"}>
+                $2000
+              </Text>
             </HStack>
-            <Text fontWeight={600} color={"green"} size="sm">
+            <Text fontWeight={600} color={"green"} fontSize="1.5em">
               75% Off
             </Text>
           </HStack>

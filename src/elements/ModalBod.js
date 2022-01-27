@@ -25,7 +25,7 @@ export default function ModalBod() {
         padding={4}>
         <Box
           maxH={{ sm: "full" }}
-          width={{ base: "100%", sm: "80%", md: "70%", lg: "50%" }}
+          width={{ base: "100%", sm: "100%", md: "70%", lg: "50%" }}
           overflow="hidden"
           alignItems="center">
           <Carousel />
@@ -40,12 +40,12 @@ export default function ModalBod() {
           <Text fontSize="1.5em">Your Better Half</Text>
           <HStack width="50%" display="flex" justifyContent="space-around">
             <HStack>
-              <Text fontWeight={600} color={"gray.500"} size="sm">
+              <Text fontWeight={600} fontSize="1.5em">
                 $399
               </Text>
               <Text as="s">$1000</Text>
             </HStack>
-            <Text fontWeight={600} color={"green"} size="sm">
+            <Text fontWeight={600} color={"green"} fontSize="1.5em">
               60% Off
             </Text>
           </HStack>
