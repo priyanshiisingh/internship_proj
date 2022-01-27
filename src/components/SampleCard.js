@@ -22,7 +22,7 @@ export default function Samplecard() {
       <Stack
         borderWidth="1px"
         borderRadius="50px"
-        mt="-150px"
+        // mt="-150px"
         mx={{ base: "70px", lg: "70px" }}
         w={{ sm: "100%", md: "70%" }}
         direction={{ base: "column", md: "row" }}

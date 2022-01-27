@@ -13,9 +13,6 @@ function background() {
         overflow="hidden"
         alignItems="center">
         <Image src={source} alt="bg" />
-        {/* <Box alignItems="center">
-          <Text>Digital Card Details</Text>
-        </Box> */}
       </Box>
     </div>
   );
